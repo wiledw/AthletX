@@ -1,0 +1,16 @@
+{
+  "gender": "Male",
+  "size": "8",
+  "colour": "8",
+  "name": "Jordan Retro",
+  "prodId": 19000128,
+  "stock": 100,
+  "price": 159.99,
+  "category": "SHOES",
+  "supImageDir": [
+    "AppFiles/images/shoe14.2.jpg",
+    "AppFiles/images/shoe14.3.jpg",
+    "AppFiles/images/shoe14.5.jpg",
+    "AppFiles/images/shoe14.jpg"
+  ]
+}

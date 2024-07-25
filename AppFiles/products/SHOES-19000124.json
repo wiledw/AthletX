@@ -1,0 +1,16 @@
+{
+  "gender": "Male",
+  "size": "7",
+  "colour": "7",
+  "name": "Nike Performance 1",
+  "prodId": 19000124,
+  "stock": 100,
+  "price": 99.99,
+  "category": "SHOES",
+  "supImageDir": [
+    "AppFiles/images/shoe1.1.jpg",
+    "AppFiles/images/shoe1.2.jpg",
+    "AppFiles/images/shoe1.3.jpg",
+    "AppFiles/images/shoe1.jpg"
+  ]
+}

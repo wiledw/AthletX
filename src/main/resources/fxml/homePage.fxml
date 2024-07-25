@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athletX.gui.HomePage">
+   <root>
+      <AnchorPane fx:id="pane" prefHeight="750.0" prefWidth="1050.0" style="-fx-background-color: #fff;">
+          <children>
+              <TextField fx:id="searchBar" layoutX="152.0" layoutY="250.0" prefHeight="55.0" prefWidth="655.0" promptText="Search for a product...">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </TextField>
+              <Button layoutX="814.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#onSearch" prefHeight="55.0" prefWidth="94.0" text="Search">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+              </Button>
+              <Label alignment="CENTER" layoutX="274.0" layoutY="144.0" prefHeight="99.0" prefWidth="440.0" text="Discover AthletX" textFill="#35496b">
+                  <font>
+                      <Font name="AppleGothic Regular" size="57.0" />
+                  </font>
+              </Label>
+              <Line endX="-248.56243896484375" endY="230.0" layoutX="948.0" layoutY="436.0" startX="-248.56243896484375" startY="-78.0" stroke="#22263e" strokeWidth="3.0" />
+              <ImageView fitHeight="221.0" fitWidth="269.0" layoutX="359.0" layoutY="429.0" onMouseClicked="#onApparellClicked">
+                  <image>
+                      <Image url="@../icons/mapparell.png" />
+                  </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+              </ImageView>
+              <Label layoutX="128.0" layoutY="355.0" onMouseClicked="#onShoesClicked" prefHeight="47.0" prefWidth="137.0" text="Shop Shoes" textFill="#35496b" underline="true">
+                  <font>
+                      <Font name="MuktaMahee Regular" size="23.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+              </Label>
+              <Label layoutX="425.0" layoutY="343.0" onMouseClicked="#onApparellClicked" prefHeight="68.0" prefWidth="183.0" text="Shop Apparel" textFill="#35496b" underline="true">
+                  <font>
+                      <Font name="MuktaMahee Regular" size="23.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+              </Label>
+              <Label layoutX="753.0" layoutY="349.0" onMouseClicked="#onAccessoriesClicked" prefHeight="56.0" prefWidth="209.0" text="Shop Accessories" textFill="#35496b" underline="true">
+                  <font>
+                      <Font name="MuktaMahee Regular" size="23.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+              </Label>
+            <ImageView fitHeight="203.0" fitWidth="198.0" layoutX="89.0" layoutY="425.0" onMouseClicked="#onShoesClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/homepageshoes.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fitHeight="204.0" fitWidth="213.0" layoutX="740.0" layoutY="411.0" onMouseClicked="#onAccessoriesClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/accessories.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Line endX="-248.56243896484375" endY="230.0" layoutX="558.0" layoutY="436.0" startX="-248.56243896484375" startY="-78.0" stroke="#22263e" strokeWidth="3.0" />
+          </children>
+      </AnchorPane>
+   </root>
+</Scene>

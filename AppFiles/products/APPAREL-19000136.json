@@ -1,0 +1,17 @@
+{
+  "gender": "Female",
+  "size": "Medium",
+  "colour": "Medium",
+  "type": "SHIRTS",
+  "name": "Performance Shirt",
+  "prodId": 19000136,
+  "stock": 100,
+  "price": 89.99,
+  "category": "APPAREL",
+  "supImageDir": [
+    "AppFiles/images/purpShirt1.jpg",
+    "AppFiles/images/purpShirt2.jpg",
+    "AppFiles/images/purpShirt3.jpg",
+    "AppFiles/images/purpShirt4.jpg"
+  ]
+}

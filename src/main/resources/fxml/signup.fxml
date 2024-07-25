@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athletX.gui.Signup">
+   <root>
+      <AnchorPane prefHeight="750.0" prefWidth="1050.0">
+         <children>
+            <BorderPane layoutX="-14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="725.0" prefWidth="444.0" style="-fx-background-color: #22263E;" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="284.0" fitWidth="339.0" layoutX="43.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/icons/img.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="711.0" prefWidth="608.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="username" layoutX="179.0" layoutY="315.0" prefHeight="27.0" prefWidth="286.0" promptText="Enter a username" style="-fx-background-color: transparent; -fx-border-color: #22263E; -fx-border-width: 0px 0px 2px 0px;" />
+                        <PasswordField fx:id="pass1" layoutX="180.0" layoutY="369.0" prefHeight="27.0" prefWidth="286.0" promptText="Enter a password" style="-fx-background-color: transparent; -fx-border-color: #22263E; -fx-border-width: 0px 0px 2px 0px;" />
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="138.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/2191156-200.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="186.0" layoutY="504.0" mnemonicParsing="false" onMouseClicked="#onSignup" prefHeight="31.0" prefWidth="270.0" style="-fx-background-color: #22263E;" text="Sign Up" textFill="WHITE">
+                           <font>
+                              <Font name="Gadugi" size="15.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="138.0" layoutY="38.0" prefHeight="81.0" prefWidth="350.0" text="Hello, Athletes">
+                           <font>
+                              <Font name="Gadugi Bold" size="50.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="pass2" layoutX="181.0" layoutY="423.0" prefHeight="27.0" prefWidth="286.0" promptText="Re-enter password" style="-fx-background-color: transparent; -fx-border-color: #22263E; -fx-border-width: 0px 0px 2px 0px;" />
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="139.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/png-transparent-computer-icons-lock-padlock-technic-computer-icons-svg-thumbnail.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="139.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/png-transparent-computer-icons-lock-padlock-technic-computer-icons-svg-thumbnail.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="userError" layoutX="180.0" layoutY="343.0" prefHeight="18.0" prefWidth="283.0" textFill="RED" />
+                        <Label fx:id="passError" layoutX="181.0" layoutY="453.0" prefHeight="18.0" prefWidth="280.0" textFill="RED" />
+                        <TextField fx:id="firstName" layoutX="178.0" layoutY="164.0" prefHeight="26.0" prefWidth="286.0" promptText="Enter your first name" style="-fx-background-color: transparent; -fx-border-color: #22263E; -fx-border-width: 0px 0px 2px 0px;" />
+                        <TextField fx:id="lastName" layoutX="177.0" layoutY="212.0" prefHeight="26.0" prefWidth="288.0" promptText="Enter your last name" style="-fx-background-color: transparent; -fx-border-color: #22263E; -fx-border-width: 0px 0px 2px 0px;" />
+                        <TextField fx:id="shippingAddress" layoutX="177.0" layoutY="258.0" prefHeight="26.0" prefWidth="288.0" promptText="Enter your shipping address" style="-fx-background-color: transparent; -fx-border-color: #22263E; -fx-border-width: 0px 0px 2px 0px;" />
+                        <Label fx:id="firstNameError" layoutX="180.0" layoutY="192.0" prefHeight="18.0" prefWidth="284.0" textFill="RED" />
+                        <Label fx:id="lastNameError" layoutX="178.0" layoutY="240.0" prefHeight="18.0" prefWidth="288.0" textFill="RED" />
+                        <Label fx:id="shippingAddressError" layoutX="178.0" layoutY="286.0" prefHeight="18.0" prefWidth="287.0" textFill="RED" />
+                        <Label layoutX="33.0" layoutY="30.0" onMouseClicked="#onGoBack" prefHeight="18.0" prefWidth="78.0" text="&lt; Back" textFill="#22263e" underline="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </root>
+</Scene>

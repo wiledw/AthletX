@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athletX.gui.login">
+        <root>
+            <AnchorPane prefHeight="750.0" prefWidth="1050.0">
+               <children>
+                  <BorderPane layoutX="79.0" layoutY="32.0" prefHeight="416.0" prefWidth="629.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="725.0" prefWidth="444.0" style="-fx-background-color: #22263E;" BorderPane.alignment="CENTER">
+                     <children>
+                              <ImageView fx:id="goHome" fitHeight="284.0" fitWidth="339.0" layoutX="53.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/icons/img.png" />
+                                 </image>
+                              </ImageView>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <right>
+                        <AnchorPane prefHeight="750.0" prefWidth="606.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="clicked" layoutX="435.0" layoutY="686.0" onMouseClicked="#createNewAccount" text="Create a new account" textFill="#005f96" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Label>
+                              <PasswordField fx:id="password" layoutX="144.0" layoutY="323.0" prefHeight="26.0" prefWidth="278.0" promptText="Enter your password" style="-fx-background-color: #FFFFFF; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #22263E;" />
+                              <Button fx:id="button" layoutX="192.0" layoutY="444.0" mnemonicParsing="false" onMouseClicked="#onLoginClick" prefHeight="32.0" prefWidth="183.0" style="-fx-background-color: #22263E;" text="Login" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Button>
+                              <Label layoutX="252.0" layoutY="154.0" text="Login">
+                                 <font>
+                                    <Font name="Gadugi Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                               <TextField fx:id="field" layoutX="146.0" layoutY="269.0" prefHeight="30.0" prefWidth="274.0" promptText="Enter your username" style="-fx-background-color: #FFFFFF; -fx-border-color: #22263E; -fx-border-width: 0px 0px 2px 0px;" />
+                        <Label fx:id="errorMessage" layoutX="138.0" layoutY="358.0" prefHeight="17.0" prefWidth="229.0" textFill="RED" />
+                        <Label layoutX="328.0" layoutY="375.0" onMouseClicked="#onForgotPassword" prefHeight="17.0" prefWidth="108.0" text="Forgot password?" textFill="#22263d" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label layoutX="111.0" layoutY="78.0" text="Hello, Athletes">
+                           <font>
+                              <Font name="Montserrat Bold" size="50.0" />
+                           </font></Label>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="108.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/png-transparent-computer-icons-lock-padlock-technic-computer-icons-svg-thumbnail.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="111.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/2191156-200.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="back" layoutX="37.0" layoutY="27.0" onMouseClicked="#onBackClicked" text="&lt; Back" textFill="#22263d" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                           </children>
+                        </AnchorPane>
+               </right>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+        </root>
+        </Scene>

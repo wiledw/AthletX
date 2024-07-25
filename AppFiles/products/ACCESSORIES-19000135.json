@@ -1,0 +1,14 @@
+{
+  "type": "OTHER",
+  "name": "Exercise Performance Band",
+  "prodId": 19000135,
+  "stock": 100,
+  "price": 31.99,
+  "category": "ACCESSORIES",
+  "supImageDir": [
+    "AppFiles/images/exBand1.jpg",
+    "AppFiles/images/exBand2.jpg",
+    "AppFiles/images/exBand3.jpg",
+    "AppFiles/images/exBand4.jpg"
+  ]
+}

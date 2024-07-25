@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athletX.gui.checkout">
+   <root>
+      <AnchorPane prefHeight="750.0" prefWidth="1050.0">
+         <children>
+            <BorderPane prefHeight="750.0" prefWidth="1050.0">
+               <top>
+                  <Pane prefHeight="130.0" prefWidth="1050.0" style="-fx-background-color: #22263E;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="139.0" layoutY="24.0" prefHeight="83.0" prefWidth="416.0" text="Checkout Details" textFill="WHITE">
+                           <font>
+                              <Font name="Gadugi" size="56.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="98.0" fitWidth="98.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/img.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </top>
+               <left>
+                  <Pane prefHeight="620.0" prefWidth="361.0" style="-fx-border-width: 0 0 0 0;" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="firstName" layoutX="23.0" layoutY="105.0" prefHeight="30.0" prefWidth="149.0" />
+                        <TextField fx:id="lastName" layoutX="195.0" layoutY="105.0" prefHeight="30.0" prefWidth="149.0" />
+                        <TextField fx:id="streetAddress" layoutX="23.0" layoutY="180.0" prefHeight="30.0" prefWidth="319.0" />
+                        <Label layoutX="24.0" layoutY="83.0" prefHeight="17.0" prefWidth="66.0" text="First Name" />
+                        <Label layoutX="196.0" layoutY="83.0" prefHeight="17.0" prefWidth="66.0" text="Last Name" />
+                        <Label layoutX="24.0" layoutY="159.0" prefHeight="17.0" prefWidth="104.0" text="Street Address" />
+                        <TextField fx:id="optionalAddress" layoutX="23.0" layoutY="224.0" prefHeight="30.0" prefWidth="319.0" promptText="Apt #, Suite, Floor (optional)" />
+                        <Label layoutX="24.0" layoutY="285.0" prefHeight="17.0" prefWidth="104.0" text="City" />
+                        <TextField fx:id="city" layoutX="23.0" layoutY="308.0" prefHeight="30.0" prefWidth="144.0" />
+                        <Label layoutX="194.0" layoutY="285.0" prefHeight="17.0" prefWidth="104.0" text="Country" />
+                        <TextField fx:id="country" layoutX="194.0" layoutY="308.0" prefHeight="30.0" prefWidth="147.0" />
+                        <Label layoutX="25.0" layoutY="24.0" prefHeight="32.0" prefWidth="297.0" text="Shipping Information">
+                           <font>
+                              <Font name="Gadugi Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="23.0" layoutY="358.0" prefHeight="32.0" prefWidth="134.0" text="Delivery method">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="139.0" layoutY="357.0" prefHeight="32.0" prefWidth="134.0" text="Estimated Arrival">
+                           <font>
+                              <Font name="Gadugi" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="141.0" layoutY="387.0" prefHeight="32.0" prefWidth="112.0" text="8-13 business days">
+                           <font>
+                              <Font name="Gadugi" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="141.0" layoutY="415.0" prefHeight="32.0" prefWidth="112.0" text="3-7 business days">
+                           <font>
+                              <Font name="Gadugi" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="263.0" layoutY="357.0" prefHeight="32.0" prefWidth="91.0" text="Shipping Cost">
+                           <font>
+                              <Font name="Gadugi" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="282.0" layoutY="387.0" prefHeight="32.0" prefWidth="31.0" text="\$10">
+                           <font>
+                              <Font name="Gadugi" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="282.0" layoutY="414.0" prefHeight="32.0" prefWidth="31.0" text="\$15">
+                           <font>
+                              <Font name="Gadugi" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <VBox fx:id="deliveryMenu" layoutX="26.0" layoutY="392.0" prefHeight="78.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <RadioButton mnemonicParsing="false" selected="true" text="Standard">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="deliveryGroup" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton mnemonicParsing="false" text="Express" toggleGroup="$deliveryGroup" />
+                           </children>
+                        </VBox>
+                        <Label fx:id="firstnameError" layoutX="23.0" layoutY="135.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+                        <Label fx:id="lastnameError" layoutX="195.0" layoutY="135.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+                        <Label fx:id="streetaddressError" layoutX="24.0" layoutY="254.0" prefHeight="17.0" prefWidth="318.0" textFill="RED" />
+                        <Label fx:id="cityError" layoutX="23.0" layoutY="338.0" prefHeight="17.0" prefWidth="144.0" textFill="RED" />
+                        <Label fx:id="countryError" layoutX="196.0" layoutY="338.0" prefHeight="17.0" prefWidth="199.0" textFill="RED" />
+                        <Label layoutX="24.0" layoutY="566.0" onMouseClicked="#onGoBack" text="&lt; Back" textFill="#005f95" underline="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </Pane>
+               </left>
+               <center>
+                  <Pane prefHeight="620.0" prefWidth="378.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="17.0" layoutY="24.0" prefHeight="35.0" prefWidth="253.0" text="Payment Information">
+                           <font>
+                              <Font name="Gadugi Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="cardNumber" layoutX="14.0" layoutY="104.0" prefHeight="30.0" prefWidth="319.0" />
+                        <Label layoutX="15.0" layoutY="83.0" prefHeight="17.0" prefWidth="105.0" text="Card number" />
+                        <Label layoutX="14.0" layoutY="163.0" prefHeight="17.0" prefWidth="104.0" text="MM" />
+                        <TextField fx:id="mm" layoutX="14.0" layoutY="183.0" prefHeight="30.0" prefWidth="63.0" />
+                        <Label layoutX="89.0" layoutY="163.0" prefHeight="17.0" prefWidth="104.0" text="YY" />
+                        <TextField fx:id="yy" layoutX="89.0" layoutY="183.0" prefHeight="30.0" prefWidth="63.0" />
+                        <Label layoutX="163.0" layoutY="163.0" prefHeight="17.0" prefWidth="104.0" text="CVV" />
+                        <TextField fx:id="cvv" layoutX="162.0" layoutY="183.0" prefHeight="30.0" prefWidth="63.0" />
+                        <Label fx:id="cardnumberError" layoutX="15.0" layoutY="135.0" prefHeight="17.0" prefWidth="318.0" textFill="RED" />
+                        <Label fx:id="mmError" layoutX="14.0" layoutY="222.0" prefHeight="17.0" prefWidth="210.0" textFill="RED" />
+                        <Label fx:id="yyError" layoutX="14.0" layoutY="246.0" prefHeight="17.0" prefWidth="212.0" textFill="RED" />
+                        <Label fx:id="cvvError" layoutX="14.0" layoutY="273.0" prefHeight="17.0" prefWidth="215.0" textFill="RED" />
+                     </children>
+                  </Pane>
+               </center>
+               <right>
+                  <Pane prefHeight="599.0" prefWidth="335.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button layoutX="36.0" layoutY="77.0" mnemonicParsing="false" onMouseClicked="#onCheckout" prefHeight="41.0" prefWidth="268.0" style="-fx-background-color: #005f95;" text="Checkout" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="73.0" layoutY="25.0" prefHeight="35.0" prefWidth="237.0" text="Your Order">
+                           <font>
+                              <Font name="Gadugi Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <ImageView fitHeight="35.0" fitWidth="33.0" layoutX="31.0" layoutY="25.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/1413908.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="37.0" layoutY="137.0" prefHeight="17.0" prefWidth="66.0" text="Items">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="37.0" layoutY="173.0" prefHeight="27.0" prefWidth="89.0" text="Shipping">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="38.0" layoutY="240.0" prefHeight="27.0" prefWidth="89.0" text="Total">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="outOfStockError" layoutX="36.0" layoutY="329.0" prefHeight="17.0" prefWidth="260.0" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="subtotal" alignment="CENTER" layoutX="191.0" layoutY="139.0" prefHeight="24.0" prefWidth="118.0" style="-fx-border-color: grey; -fx-background-color: white;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shipping" alignment="CENTER" layoutX="191.0" layoutY="178.0" prefHeight="17.0" prefWidth="118.0" style="-fx-border-color: grey; -fx-background-color: white;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="total" alignment="CENTER" layoutX="191.0" layoutY="243.0" prefHeight="17.0" prefWidth="118.0" style="-fx-border-color: grey; -fx-background-color: white;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </right>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </root>
+</Scene>

@@ -1,0 +1,14 @@
+{
+  "type": "SOCKS",
+  "name": "Performance Socks",
+  "prodId": 19000133,
+  "stock": 100,
+  "price": 30.99,
+  "category": "ACCESSORIES",
+  "supImageDir": [
+    "AppFiles/images/sockNike1.jpg",
+    "AppFiles/images/sockNike2.jpg",
+    "AppFiles/images/sockNike3.jpg",
+    "AppFiles/images/sockNike4.jpg"
+  ]
+}

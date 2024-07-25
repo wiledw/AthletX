@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" prefHeight="33.0" prefWidth="300.0" style="-fx-background-color: #22263E;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athletX.gui.LoggedTab">
+   <children>
+      <Separator layoutX="147.0" orientation="VERTICAL" prefHeight="48.0" prefWidth="0.0" />
+      <Button fx:id="signButton" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onSignup" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: #22263E;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="loggedButton" layoutX="166.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onLog" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: #22263E;" text="Log in" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

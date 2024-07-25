@@ -1,0 +1,16 @@
+{
+  "gender": "Female",
+  "size": "7",
+  "colour": "7",
+  "name": "Skechers Performance 1",
+  "prodId": 19000126,
+  "stock": 100,
+  "price": 99.99,
+  "category": "SHOES",
+  "supImageDir": [
+    "AppFiles/images/shoe12.2.jpg",
+    "AppFiles/images/shoe12.4.jpg",
+    "AppFiles/images/shoe12.5.jpg",
+    "AppFiles/images/shoe12.jpg"
+  ]
+}

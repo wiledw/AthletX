@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athletX.gui.addProduct">
+   <root>
+      <AnchorPane fx:id="pane" prefHeight="750.0" prefWidth="1050.0" style="-fx-background-color: #FFFFFF;">
+          <children>
+            <VBox prefHeight="124.0" prefWidth="1050.0" AnchorPane.bottomAnchor="626.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="submitButton" layoutX="425.0" layoutY="640.0" mnemonicParsing="false" onAction="#submitFields" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #dcdeec;" text="Submit Product">
+               <font>
+                  <Font name="Montserrat Regular" size="21.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="375.0" layoutY="140.0" prefWidth="300.0" style="-fx-border-width: 0 0 3 0; -fx-border-color: #000000;" text="Add New Product" textFill="#22263e">
+               <font>
+                  <Font name="Montserrat Bold" size="32.0" />
+               </font>
+            </Label>
+            <HBox layoutX="230.0" layoutY="230.0" prefHeight="400.0" prefWidth="590.0" style="-fx-background-color: #EEEEEE; -fx-border-color: #EEEEEE;">
+               <children>
+                  <VBox prefHeight="400.0" prefWidth="300.0">
+                     <children>
+                        <Pane prefHeight="140.0" prefWidth="290.0">
+                           <children>
+                              <Pane prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <Label layoutX="20.0" prefHeight="30.0" prefWidth="250.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #000000;" text="   Select Product Category">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutY="30.0" prefHeight="75.0" prefWidth="290.0">
+                                 <children>
+                                    <RadioButton layoutX="10.0" layoutY="5.0" mnemonicParsing="false" onAction="#selectShoes" prefHeight="20.0" prefWidth="200.0" selected="true" text="Shoes">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="categorySelect" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton layoutX="10.0" layoutY="30.0" mnemonicParsing="false" onAction="#selectApparel" prefHeight="20.0" prefWidth="200.0" text="Apparel" toggleGroup="$categorySelect">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <RadioButton layoutX="10.0" layoutY="55.0" mnemonicParsing="false" onAction="#selectAccessories" prefHeight="20.0" prefWidth="200.0" text="Accessories" toggleGroup="$categorySelect">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </Pane>
+                              <ComboBox fx:id="productType" disable="true" layoutX="10.0" layoutY="110.0" prefWidth="270.0" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="110.0" prefWidth="290.0">
+                           <children>
+                              <Pane prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <Label layoutX="20.0" prefHeight="30.0" prefWidth="250.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #000000;" text="   Select Gender">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutY="30.0" prefHeight="75.0" prefWidth="290.0">
+                                 <children>
+                                    <RadioButton layoutX="10.0" layoutY="5.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="200.0" selected="true" text="Male">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="genderSelect" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton layoutX="10.0" layoutY="30.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="200.0" text="Female" toggleGroup="$genderSelect">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <RadioButton layoutX="10.0" layoutY="55.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="200.0" text="Unisex" toggleGroup="$genderSelect">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="170.0" prefWidth="290.0">
+                           <children>
+                              <Pane prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <Label layoutX="20.0" prefHeight="30.0" prefWidth="250.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #000000;" text="   Select Images">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutY="30.0" prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <Label fx:id="fileName" layoutX="10.0" layoutY="5.0" prefHeight="25.0" prefWidth="205.0" style="-fx-background-color: #FFFFFF; fx-border-radius: 10px;">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Button layoutX="220.0" layoutY="5.0" mnemonicParsing="false" onAction="#selectImage" prefWidth="60.0" text="Browse" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutY="60.0" prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <Label fx:id="fileName1" layoutX="10.0" layoutY="5.0" prefHeight="25.0" prefWidth="205.0" style="-fx-background-color: #FFFFFF; fx-border-radius: 10px;">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutY="90.0" prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <Label fx:id="fileName2" layoutX="10.0" layoutY="5.0" prefHeight="25.0" prefWidth="205.0" style="-fx-background-color: #FFFFFF; fx-border-radius: 10px;">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutY="120.0" prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <Label fx:id="fileName3" layoutX="10.0" layoutY="5.0" prefHeight="25.0" prefWidth="205.0" style="-fx-background-color: #FFFFFF; fx-border-radius: 10px;">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="290.0">
+                     <children>
+                        <Pane prefHeight="65.0" prefWidth="290.0">
+                           <children>
+                              <Pane prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <Label layoutX="20.0" prefHeight="30.0" prefWidth="250.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #000000;" text="   Input Price">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutY="30.0" prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <TextField fx:id="priceDigits" alignment="CENTER_RIGHT" layoutX="20.0" layoutY="5.0" prefHeight="25.0" prefWidth="210.0" promptText="XX" />
+                                    <TextField fx:id="priceDecimals" alignment="CENTER" layoutX="250.0" layoutY="5.0" prefHeight="25.0" prefWidth="30.0" promptText="xx" />
+                                    <Label alignment="CENTER" layoutX="10.0" layoutY="5.0" prefHeight="25.0" text="\$">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="230.0" layoutY="9.0" prefWidth="20.0" text=".">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="147.0" prefHeight="65.0" prefWidth="290.0">
+                           <children>
+                              <Pane prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <Label layoutX="20.0" prefHeight="30.0" prefWidth="250.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #000000;" text="   Input Stock">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutY="30.0" prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <TextField fx:id="stockAmt" alignment="CENTER" layoutX="10.0" layoutY="5.0" prefHeight="25.0" prefWidth="270.0" promptText="Stock Amt." />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="65.0" prefWidth="290.0">
+                           <children>
+                              <Pane prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <Label layoutX="20.0" prefHeight="30.0" prefWidth="250.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #000000;" text="   Input Size">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutY="30.0" prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <TextField fx:id="prodSize" alignment="CENTER" layoutX="10.0" layoutY="5.0" prefHeight="25.0" prefWidth="270.0" promptText="Product Size" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="75.0" prefHeight="65.0" prefWidth="290.0">
+                           <children>
+                              <Pane prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <Label layoutX="20.0" prefHeight="30.0" prefWidth="250.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #000000;" text="   Input Colour">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutY="30.0" prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <TextField fx:id="prodCol" alignment="CENTER" layoutX="10.0" layoutY="5.0" prefHeight="25.0" prefWidth="270.0" promptText="Product Colour" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="180.0" prefHeight="65.0" prefWidth="290.0">
+                           <children>
+                              <Pane prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <Label layoutX="20.0" prefHeight="30.0" prefWidth="250.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #000000;" text="   Product Name">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutY="30.0" prefHeight="30.0" prefWidth="290.0">
+                                 <children>
+                                    <TextField fx:id="prodName" alignment="CENTER" layoutX="10.0" layoutY="5.0" prefHeight="25.0" prefWidth="270.0" promptText="Product Colour" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children></HBox>
+            <Label fx:id="errorMessage" alignment="CENTER" layoutY="700.0" prefWidth="1050.0" text="Error" textFill="RED" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+          </children>
+      </AnchorPane>
+   </root>
+</Scene>

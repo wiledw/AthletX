@@ -1,0 +1,17 @@
+{
+  "gender": "Male",
+  "size": "Medium",
+  "colour": "Medium",
+  "type": "SHORTS",
+  "name": "Performance Shorts",
+  "prodId": 19000137,
+  "stock": 100,
+  "price": 69.99,
+  "category": "APPAREL",
+  "supImageDir": [
+    "AppFiles/images/bShorts1.jpg",
+    "AppFiles/images/bShorts2.jpg",
+    "AppFiles/images/bShorts3.jpg",
+    "AppFiles/images/bShorts4.jpg"
+  ]
+}

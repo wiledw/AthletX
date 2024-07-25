@@ -1,0 +1,16 @@
+{
+  "gender": "Male",
+  "size": "8",
+  "colour": "8",
+  "name": "PUMA Alphacat Golf",
+  "prodId": 19000130,
+  "stock": 100,
+  "price": 109.99,
+  "category": "SHOES",
+  "supImageDir": [
+    "AppFiles/images/shoe16.2.jpg",
+    "AppFiles/images/shoe16.3.jpg",
+    "AppFiles/images/shoe16.5.jpg",
+    "AppFiles/images/shoe16.jpg"
+  ]
+}

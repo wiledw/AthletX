@@ -1,0 +1,16 @@
+{
+  "gender": "Male",
+  "size": "7",
+  "colour": "7",
+  "name": "Nike Performance 1",
+  "prodId": 19000125,
+  "stock": 100,
+  "price": 99.99,
+  "category": "SHOES",
+  "supImageDir": [
+    "AppFiles/images/shoe11.2.jpg",
+    "AppFiles/images/shoe11.4.jpg",
+    "AppFiles/images/shoe11.5.jpg",
+    "AppFiles/images/shoe11.jpg"
+  ]
+}

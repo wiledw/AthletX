@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athletX.gui.Usercart">
+   <AnchorPane fx:id="pane" prefHeight="750.0" prefWidth="1050.0">
+      <AnchorPane layoutY="120.0" prefHeight="630.0" prefWidth="1050.0">
+         <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="510.0" prefWidth="1010.0" style="-fx-background-color: #EEEEEE; -fx-border-color: #888888; -fx-border-radius: 10px;">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="490.0" prefWidth="990.0" style="-fx-background-color: #E8E8E8; -fx-border-color: #D0D0D0;">
+               <VBox prefHeight="490.0" prefWidth="990.0">
+                  <HBox prefHeight="30.0" prefWidth="990.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #AAAAAA;">
+                     <Label alignment="CENTER" prefHeight="30.0" prefWidth="115.0" text="Cost">
+                        <HBox.margin>
+                           <Insets left="815.0" />
+                        </HBox.margin>
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                  </HBox>
+                  <HBox fx:id="cartRow1" prefHeight="115.0" prefWidth="990.0">
+                     <ImageView fitHeight="115.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" />
+                     <Pane prefHeight="98.0" prefWidth="700.0" style="-fx-border-color: #AAAAAA; -fx-border-width: 0 0 1 0;">
+                        <Label layoutX="50.0" prefHeight="115.0" prefWidth="539.0" text="Item 1 Test">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </Pane>
+                     <Pane prefHeight="115.0" prefWidth="115.0">
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="115.0" maxWidth="115.0" minHeight="115.0" minWidth="115.0" prefHeight="115.0" prefWidth="115.0" text="\$49.99">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </Pane>
+                     <VBox layoutX="940.0" layoutY="10.0" prefHeight="115.0" prefWidth="60.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #AAAAAA;">
+                        <Button fx:id="trash1" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#trash1Handler" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="35.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <Image url="@../icons/Trash.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </VBox>
+                  </HBox>
+                  <HBox fx:id="cartRow2" layoutX="10.0" layoutY="40.0" prefHeight="115.0" prefWidth="990.0">
+                     <ImageView fitHeight="115.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" />
+                     <Pane prefHeight="98.0" prefWidth="700.0" style="-fx-border-color: #AAAAAA; -fx-border-width: 0 0 1 0;">
+                        <Label layoutX="50.0" prefHeight="115.0" prefWidth="539.0" text="Item 2 Test">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </Pane>
+                     <Pane prefHeight="115.0" prefWidth="115.0">
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="115.0" maxWidth="115.0" minHeight="115.0" minWidth="115.0" prefHeight="115.0" prefWidth="115.0" text="\$49.99">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </Pane>
+                     <VBox layoutX="940.0" layoutY="10.0" prefHeight="115.0" prefWidth="60.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #AAAAAA;">
+                        <Button fx:id="trash2" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#trash2Handler" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="35.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <Image url="@../icons/Trash.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </VBox>
+                  </HBox>
+                  <HBox fx:id="cartRow3" layoutX="10.0" layoutY="156.0" prefHeight="115.0" prefWidth="990.0">
+                     <ImageView fitHeight="115.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" />
+                     <Pane prefHeight="98.0" prefWidth="700.0" style="-fx-border-color: #AAAAAA; -fx-border-width: 0 0 1 0;">
+                        <Label layoutX="50.0" prefHeight="115.0" prefWidth="539.0" text="Item 3 Test">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </Pane>
+                     <Pane prefHeight="115.0" prefWidth="115.0">
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="115.0" maxWidth="115.0" minHeight="115.0" minWidth="115.0" prefHeight="115.0" prefWidth="115.0" text="\$49.99">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </Pane>
+                     <VBox layoutX="940.0" layoutY="10.0" prefHeight="115.0" prefWidth="60.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #AAAAAA;">
+                        <Button fx:id="trash3" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#trash3Handler" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="35.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <Image url="@../icons/Trash.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </VBox>
+                  </HBox>
+                  <HBox fx:id="cartRow4" layoutX="10.0" layoutY="271.0" prefHeight="115.0" prefWidth="990.0">
+                     <ImageView fitHeight="115.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" />
+                     <Pane prefHeight="98.0" prefWidth="700.0">
+                        <Label layoutX="50.0" prefHeight="115.0" prefWidth="539.0" text="Item 4 Test">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </Pane>
+                     <Pane prefHeight="115.0" prefWidth="115.0">
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="115.0" maxWidth="115.0" minHeight="115.0" minWidth="115.0" prefHeight="115.0" prefWidth="115.0" text="\$49.99">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </Pane>
+                     <VBox prefHeight="115.0" prefWidth="60.0">
+                        <Button fx:id="trash4" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#trash4Handler" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="35.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <Image url="@../icons/Trash.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </VBox>
+                  </HBox>
+               </VBox>
+            </AnchorPane>
+         </AnchorPane>
+         <Pane layoutX="65.0" layoutY="540.0" prefHeight="50.0" prefWidth="900.0">
+            <Pane prefHeight="50.0" prefWidth="250.0" style="-fx-border-color: #888888; -fx-border-radius: 10px; -fx-background-color: #EEEEEE;">
+               <Button fx:id="prevPage" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#cycleLeft" prefHeight="30.0" prefWidth="30.0" text="&lt;">
+                  <padding>
+                     <Insets bottom="1.0" />
+                  </padding>
+               </Button>
+               <Button id="next-page" fx:id="nextPage" layoutX="210.0" layoutY="10.0" mnemonicParsing="false" onAction="#cycleRight" prefHeight="30.0" prefWidth="30.0" text="&gt;">
+                  <padding>
+                     <Insets bottom="1.0" />
+                  </padding>
+               </Button>
+               <Label fx:id="pageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="10.0" prefHeight="30.0" prefWidth="170.0" text="1-4 of 14" textAlignment="CENTER">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Label>
+            </Pane>
+         </Pane>
+         <Button layoutX="871.0" layoutY="544.0" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#shippingHandler" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: transparent;">
+            <graphic>
+               <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../icons/Package.png" />
+               </ImageView>
+            </graphic>
+         </Button>
+      </AnchorPane>
+   </AnchorPane>
+</Scene>

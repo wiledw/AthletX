@@ -1,0 +1,16 @@
+{
+  "gender": "Female",
+  "size": "7",
+  "colour": "7",
+  "name": "Jordan 1 High OG",
+  "prodId": 19000129,
+  "stock": 100,
+  "price": 259.99,
+  "category": "SHOES",
+  "supImageDir": [
+    "AppFiles/images/shoe15.2.jpg",
+    "AppFiles/images/shoe15.3.jpg",
+    "AppFiles/images/shoe15.5.jpg",
+    "AppFiles/images/shoe15.jpg"
+  ]
+}

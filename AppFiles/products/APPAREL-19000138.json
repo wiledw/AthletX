@@ -1,0 +1,17 @@
+{
+  "gender": "Unisex",
+  "size": "Extra Large",
+  "colour": "Extra Large",
+  "type": "SHIRTS",
+  "name": "appa",
+  "prodId": 19000138,
+  "stock": 10000000,
+  "price": 999.99,
+  "category": "APPAREL",
+  "supImageDir": [
+    "AppFiles/images/appa.jpg",
+    null,
+    null,
+    null
+  ]
+}

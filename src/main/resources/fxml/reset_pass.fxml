@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athletX.gui.resetPass">
+   <root>
+      <AnchorPane prefHeight="750.0" prefWidth="1050.0">
+         <children>
+            <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="606.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <PasswordField fx:id="pass2" layoutX="230.0" layoutY="388.0" promptText="Re-enter password" style="-fx-background-color: #FFFFFF; -fx-border-color: #22263E; -fx-border-width: 0px 0px 2px 0px;" />
+                        <TextField fx:id="username" layoutX="230.0" layoutY="275.0" promptText="Enter your username" style="-fx-background-color: #FFFFFF; -fx-border-color: #22263E; -fx-border-width: 0px 0px 2px 0px;" />
+                        <PasswordField fx:id="pass1" layoutX="230.0" layoutY="330.0" promptText="Enter a new password" style="-fx-background-color: #FFFFFF; -fx-border-color: #22263E; -fx-border-width: 0px 0px 2px 0px;" />
+                        <Label layoutX="160.0" layoutY="170.0" text="Reset Password">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="236.0" layoutY="458.0" mnemonicParsing="false" onMouseClicked="#onPassReset" style="-fx-background-color: #22263E;" text="Reset" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Regular" size="16.0" />
+                           </font></Button>
+                        <Label fx:id="userError" layoutX="230.0" layoutY="302.0" prefHeight="17.0" prefWidth="102.0" textFill="RED" />
+                        <Label fx:id="passError" layoutX="44.0" layoutY="223.0" prefHeight="17.0" prefWidth="142.0" textFill="RED" />
+                        <Label layoutX="14.0" layoutY="14.0" onMouseClicked="#onGoBack" text="&lt; Back" textFill="#22263d" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Label>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="177.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/2191156-200.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="181.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/png-transparent-computer-icons-lock-padlock-technic-computer-icons-svg-thumbnail.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="182.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/png-transparent-computer-icons-lock-padlock-technic-computer-icons-svg-thumbnail.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </center>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="444.0" style="-fx-background-color: #22263E;" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="284.0" fitWidth="339.0" layoutX="53.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/img.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+               </left>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </root>
+</Scene>

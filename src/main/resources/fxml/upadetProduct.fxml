@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athletX.gui.updateProduct">
+    <root>
+        <AnchorPane prefHeight="750.0" prefWidth="1050.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Pane layoutX="172.0" layoutY="109.0" prefHeight="80.0" prefWidth="1050.0" style="-fx-background-color: #22263E;" AnchorPane.bottomAnchor="670.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <TextField layoutX="102.0" layoutY="28.0" prefHeight="25.0" prefWidth="640.0" promptText="Search" />
+                        <Button layoutX="749.0" layoutY="29.0" mnemonicParsing="false" text="Search">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="65.0" fitWidth="103.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icons/img.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="813.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icons/cart.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="844.0" layoutY="24.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="189.0" style="-fx-background-color: #22263E;" text="Account and Details" textFill="WHITE">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+                <Pane layoutY="80.0" prefHeight="41.0" prefWidth="1050.0" style="-fx-background-color: #ecedf4;">
+                    <children>
+                        <Button layoutX="29.0" layoutY="8.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #ecedf4;" text="Best Sellers">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="141.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: #ecedf4;" text="Gift Ideas">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="254.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: #ecedf4;" text="Clothing">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="352.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: #ecedf4;" text="Accessories">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="463.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: #ecedf4;" text="Shoes">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+                <TextField layoutX="28.0" layoutY="200.0" prefHeight="28.0" prefWidth="248.0" style="-fx-background-color: #FFFFFF;" text="Change Category:">
+                    <font>
+                        <Font name="Montserrat Regular" size="14.0" />
+                    </font>
+                </TextField>
+                <Line endX="126.79998779296875" layoutX="135.0" layoutY="228.0" startX="-100.0" stroke="#22263e" strokeWidth="2.0" />
+                <TextField layoutX="32.0" layoutY="473.0" prefHeight="28.0" prefWidth="248.0" style="-fx-background-color: #FFFFFF;" text="Change Price: ">
+                    <font>
+                        <Font name="Montserrat Regular" size="14.0" />
+                    </font>
+                </TextField>
+                <Line endX="126.79998779296875" layoutX="133.0" layoutY="501.0" startX="-100.0" stroke="#22263e" strokeWidth="2.0" />
+                <TextField layoutX="382.0" layoutY="594.0" prefHeight="28.0" prefWidth="248.0" style="-fx-background-color: #FFFFFF;" text="Add/Remove Color:">
+                    <font>
+                        <Font name="Montserrat Regular" size="14.0" />
+                    </font>
+                </TextField>
+                <Line endX="126.79998779296875" layoutX="489.0" layoutY="622.0" startX="-100.0" stroke="#22263e" strokeWidth="2.0" />
+                <TextField layoutX="382.0" layoutY="322.0" prefHeight="28.0" prefWidth="248.0" style="-fx-background-color: #FFFFFF;" text="Change/Add Sizes:">
+                    <font>
+                        <Font name="Montserrat Regular" size="14.0" />
+                    </font>
+                </TextField>
+                <Line endX="126.79998779296875" layoutX="489.0" layoutY="350.0" startX="-100.0" stroke="#22263e" strokeWidth="2.0" />
+                <TextField layoutX="44.0" layoutY="515.0" />
+                <Button layoutX="209.0" layoutY="516.0" mnemonicParsing="false" style="-fx-background-color: #dcdeec;" text="Add">
+                    <font>
+                        <Font name="Montserrat Regular" size="12.0" />
+                    </font></Button>
+                <VBox layoutX="46.0" layoutY="238.0" prefHeight="58.0" prefWidth="98.0" spacing="10.0">
+                    <children>
+                        <RadioButton mnemonicParsing="false" text="Shoes">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font></RadioButton>
+                        <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Apparel ">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font></RadioButton>
+                        <RadioButton mnemonicParsing="false" text="Accessories">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font></RadioButton>
+                    </children>
+                </VBox>
+                <TextField layoutX="32.0" layoutY="367.0" prefHeight="28.0" prefWidth="248.0" style="-fx-background-color: #FFFFFF;" text="Chnage Gender:">
+                    <font>
+                        <Font name="Montserrat Regular" size="14.0" />
+                    </font>
+                </TextField>
+                <Line endX="126.79998779296875" layoutX="139.0" layoutY="395.0" startX="-100.0" stroke="#22263e" strokeWidth="2.0" />
+                <VBox layoutX="50.0" layoutY="405.0" prefHeight="47.0" prefWidth="98.0" spacing="10.0">
+                    <children>
+                        <RadioButton mnemonicParsing="false" text="Female">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Male">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </RadioButton>
+                    </children>
+                </VBox>
+                <Button layoutX="746.0" layoutY="631.0" mnemonicParsing="false" style="-fx-background-color: #dcdeec;" text="Commit Changes">
+                    <font>
+                        <Font name="Montserrat Regular" size="21.0" />
+                    </font>
+                </Button>
+                <TextField layoutX="373.0" layoutY="197.0" prefHeight="28.0" prefWidth="248.0" style="-fx-background-color: #FFFFFF;" text="Change Avaliable Stock:">
+                    <font>
+                        <Font name="Montserrat Regular" size="14.0" />
+                    </font>
+                </TextField>
+                <Line endX="126.79998779296875" layoutX="480.0" layoutY="225.0" startX="-100.0" stroke="#22263e" strokeWidth="2.0" />
+                <TextField layoutX="390.0" layoutY="237.0" />
+                <Button layoutX="555.0" layoutY="238.0" mnemonicParsing="false" style="-fx-background-color: #dcdeec;" text="Add">
+                    <font>
+                        <Font name="Montserrat Regular" size="12.0" />
+                    </font>
+                </Button>
+                <TextField layoutX="28.0" layoutY="599.0" prefHeight="28.0" prefWidth="248.0" style="-fx-background-color: #FFFFFF;" text="Reset ProductID:">
+                    <font>
+                        <Font name="Montserrat Regular" size="14.0" />
+                    </font>
+                </TextField>
+                <Line endX="126.79998779296875" layoutX="135.0" layoutY="627.0" startX="-100.0" stroke="#22263e" strokeWidth="2.0" />
+                <TextField layoutX="45.0" layoutY="639.0" />
+                <Button layoutX="210.0" layoutY="640.0" mnemonicParsing="false" style="-fx-background-color: #dcdeec;" text="Add">
+                    <font>
+                        <Font name="Montserrat Regular" size="12.0" />
+                    </font>
+                </Button>
+                <TextField layoutX="712.0" layoutY="195.0" prefHeight="28.0" prefWidth="248.0" style="-fx-background-color: #FFFFFF;" text="Chnage Apparel Category:">
+                    <font>
+                        <Font name="Montserrat Regular" size="14.0" />
+                    </font>
+                </TextField>
+                <Line endX="126.79998779296875" layoutX="819.0" layoutY="223.0" startX="-100.0" stroke="#22263e" strokeWidth="2.0" />
+                <VBox layoutX="730.0" layoutY="233.0" prefHeight="58.0" prefWidth="98.0" spacing="10.0">
+                    <children>
+                        <RadioButton mnemonicParsing="false" text="Shirts">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Pants">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="Shorts">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </RadioButton>
+                        <RadioButton layoutX="10.0" layoutY="63.0" mnemonicParsing="false" text="Jackets">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </RadioButton>
+                    </children>
+                </VBox>
+                <TextField layoutX="373.0" layoutY="481.0" prefHeight="28.0" prefWidth="248.0" style="-fx-background-color: #FFFFFF;" text="Link to a New Department:">
+                    <font>
+                        <Font name="Montserrat Regular" size="14.0" />
+                    </font>
+                </TextField>
+                <Line endX="126.79998779296875" layoutX="480.0" layoutY="509.0" startX="-100.0" stroke="#22263e" strokeWidth="2.0" />
+                <TextField layoutX="388.0" layoutY="525.0" />
+                <Button layoutX="553.0" layoutY="526.0" mnemonicParsing="false" style="-fx-background-color: #dcdeec;" text="Link">
+                    <font>
+                        <Font name="Montserrat Regular" size="12.0" />
+                    </font>
+                </Button>
+                <Label layoutX="44.0" layoutY="136.0" text="Update Product" textFill="#22263e">
+                    <font>
+                        <Font name="Montserrat Bold" size="32.0" />
+                    </font>
+                </Label>
+            <TextField layoutX="390.0" layoutY="362.0" />
+            <Button layoutX="566.0" layoutY="363.0" mnemonicParsing="false" style="-fx-background-color: #dcdeec;" text="Add">
+               <font>
+                  <Font name="Montserrat Regular" size="12.0" />
+               </font>
+            </Button>
+            <TextField layoutX="390.0" layoutY="406.0" />
+            <Button layoutX="557.0" layoutY="407.0" mnemonicParsing="false" style="-fx-background-color: #dcdeec;" text="Remove">
+               <font>
+                  <Font name="Montserrat Regular" size="12.0" />
+               </font>
+            </Button>
+            <TextField layoutX="390.0" layoutY="638.0" />
+            <Button layoutX="566.0" layoutY="639.0" mnemonicParsing="false" style="-fx-background-color: #dcdeec;" text="Add">
+               <font>
+                  <Font name="Montserrat Regular" size="12.0" />
+               </font>
+            </Button>
+            <TextField layoutX="390.0" layoutY="682.0" />
+            <Button layoutX="557.0" layoutY="683.0" mnemonicParsing="false" style="-fx-background-color: #dcdeec;" text="Remove">
+               <font>
+                  <Font name="Montserrat Regular" size="12.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </root>
+</Scene>

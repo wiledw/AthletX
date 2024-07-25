@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athletX.gui.customerService">
+   <root>
+      <AnchorPane fx:id="pane" prefHeight="750.0" prefWidth="1050.0" style="-fx-background-color: #fff;">
+          <children>
+              <Pane layoutX="-2.0" layoutY="151.0" prefHeight="74.0" prefWidth="1050.0" style="-fx-background-color: #fff;">
+                  <children>
+                      <Label layoutX="52.0" layoutY="16.0" text="Need Help?" textFill="#394069">
+                          <font>
+                              <Font name="Montserrat Regular" size="35.0" />
+                          </font>
+                      </Label>
+                  </children>
+              </Pane>
+              <Separator layoutX="47.0" layoutY="225.0" prefHeight="15.0" prefWidth="957.0" />
+              <Button fx:id="reco" layoutX="47.0" layoutY="279.0" mnemonicParsing="false" onAction="#recClicked" prefHeight="41.0" prefWidth="210.0" style="-fx-background-color: #fff; -fx-border-radius: 20; -fx-border-color: #394069;" text="Recommended" textFill="#394069">
+                  <font>
+                      <Font size="15.0" />
+                  </font>
+            </Button>
+              <Button fx:id="shipping" layoutX="47.0" layoutY="355.0" mnemonicParsing="false" onAction="#shipClicked" prefHeight="41.0" prefWidth="210.0" style="-fx-background-color: #fff; -fx-border-radius: 20; -fx-border-color: #394069;" text="Shipping" textFill="#394069">
+                  <font>
+                      <Font size="15.0" />
+                  </font>
+            </Button>
+              <Button fx:id="refund" layoutX="47.0" layoutY="427.0" mnemonicParsing="false" onAction="#returnClicked" prefHeight="41.0" prefWidth="210.0" style="-fx-background-color: #fff; -fx-border-radius: 20; -fx-border-color: #394069;" text="Returns + Refunds" textFill="#394069">
+                  <font>
+                      <Font size="15.0" />
+                  </font>
+            </Button>
+              <Button fx:id="accountManaging" layoutX="47.0" layoutY="504.0" mnemonicParsing="false" onAction="#accountClicked" prefHeight="41.0" prefWidth="210.0" style="-fx-background-color: #fff; -fx-border-radius: 20; -fx-border-color: #394069;" text="Managing your Account" textFill="#394069">
+                  <font>
+                      <Font size="15.0" />
+                  </font>
+            </Button>
+              <Button fx:id="payment" layoutX="47.0" layoutY="581.0" mnemonicParsing="false" onAction="#paymentClicked" prefHeight="41.0" prefWidth="210.0" style="-fx-background-color: #fff; -fx-border-radius: 20; -fx-border-color: #394069;" text="Payment + Pricing" textFill="#394069">
+                  <font>
+                      <Font size="15.0" />
+                  </font>
+            </Button>
+              <Button fx:id="miscellaneous" layoutX="47.0" layoutY="650.0" mnemonicParsing="false" onAction="#miscClicked" prefHeight="41.0" prefWidth="210.0" style="-fx-background-color: #fff; -fx-border-radius: 20; -fx-border-color: #394069;" text="Miscellaneous" textFill="#394069">
+                  <font>
+                      <Font size="15.0" />
+                  </font>
+            </Button>
+              <Label fx:id="q1" layoutX="299.0" layoutY="279.0" prefHeight="23.0" prefWidth="355.0" text="Q: Is my personal and payment information secure?" textFill="#394069">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </Label>
+              <TextArea fx:id="a1" editable="false" layoutX="302.0" layoutY="311.0" prefHeight="88.0" prefWidth="443.0" style="-fx-border-color: #fff;" text="A: Yes, we take the security of our customers' information seriously. Our website uses SSL encryption to protect your personal and payment information. We also comply with industry standards for data privacy and security." wrapText="true">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+            </TextArea>
+              <Label fx:id="q2" layoutX="299.0" layoutY="427.0" text="Q: How can I place an order?" textFill="#394069">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </Label>
+              <TextArea fx:id="a2" editable="false" layoutX="302.0" layoutY="455.0" prefHeight="88.0" prefWidth="443.0" style="-fx-border-color: #fff;" text="A: To place an order, simply browse the website for the items you want to purchase, add them to your shopping cart, and proceed to checkout. You will be prompted to provide your shipping and payment information before confirming your order." wrapText="true">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+            </TextArea>
+              <Label fx:id="q3" layoutX="302.0" layoutY="571.0" text="Q: How long will it take to receive my order?" textFill="#394069">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </Label>
+              <TextArea fx:id="a3" editable="false" layoutX="304.0" layoutY="598.0" prefHeight="103.0" prefWidth="443.0" style="-fx-border-color: #fff;" text="A: The delivery time depends on your location and the shipping option you choose. Typically, standard shipping takes 3-5 business days, while expedited shipping takes 1-2 business days. You can track your order status using the tracking number provided in the shipping confirmation email." wrapText="true">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+            </TextArea>
+              <ImageView fx:id="img" fitHeight="318.0" fitWidth="307.0" layoutX="760.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../icons/Add%20to%20Cart-rafiki.png" />
+                  </image>
+              </ImageView>
+          </children>
+      </AnchorPane>
+   </root>
+</Scene>

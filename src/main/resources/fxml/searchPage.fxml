@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athletX.gui.SearchPage">
+   <root>
+      <AnchorPane fx:id="pane" prefHeight="750.0" prefWidth="1050.0">
+         <children>
+            <GridPane fx:id="grid" layoutX="181.0" layoutY="168.0" onScroll="#onScroll" prefHeight="329.0" prefWidth="746.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="250.0" prefWidth="250.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="180.0" minHeight="180.0" prefHeight="180.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="180.0" minHeight="180.0" prefHeight="180.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <Label fx:id="resultNum" alignment="CENTER" layoutX="62.0" layoutY="127.0" prefHeight="41.0" prefWidth="110.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </root>
+</Scene>

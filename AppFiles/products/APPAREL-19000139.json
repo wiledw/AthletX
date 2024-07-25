@@ -1,0 +1,17 @@
+{
+  "gender": "Female",
+  "size": "Medium",
+  "colour": "Medium",
+  "type": "PANTS",
+  "name": "Performance Legging 1",
+  "prodId": 19000139,
+  "stock": 100,
+  "price": 59.99,
+  "category": "APPAREL",
+  "supImageDir": [
+    "AppFiles/images/bLegging1.jpg",
+    "AppFiles/images/bLegging2.jpg",
+    "AppFiles/images/bLegging3.jpg",
+    "AppFiles/images/bLegging4.jpg"
+  ]
+}

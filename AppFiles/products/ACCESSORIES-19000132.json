@@ -1,0 +1,14 @@
+{
+  "type": "SOCKS",
+  "name": "Socks",
+  "prodId": 19000132,
+  "stock": 100,
+  "price": 29.99,
+  "category": "ACCESSORIES",
+  "supImageDir": [
+    "AppFiles/images/sockW1.jpg",
+    "AppFiles/images/sockW2.jpg",
+    "AppFiles/images/sockW3.jpg",
+    "AppFiles/images/sockW4.jpg"
+  ]
+}

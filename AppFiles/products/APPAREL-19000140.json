@@ -1,0 +1,17 @@
+{
+  "gender": "Male",
+  "size": "Medium",
+  "colour": "Medium",
+  "type": "PANTS",
+  "name": "Performance Pants 2",
+  "prodId": 19000140,
+  "stock": 100,
+  "price": 59.99,
+  "category": "APPAREL",
+  "supImageDir": [
+    "AppFiles/images/greyPants1.jpg",
+    "AppFiles/images/greyPants2.jpg",
+    "AppFiles/images/greyPants3.jpg",
+    "AppFiles/images/greyPants4.jpg"
+  ]
+}

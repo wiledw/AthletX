@@ -1,0 +1,14 @@
+{
+  "type": "SOCKS",
+  "name": "Puma Performance Socks",
+  "prodId": 19000134,
+  "stock": 100,
+  "price": 27.99,
+  "category": "ACCESSORIES",
+  "supImageDir": [
+    "AppFiles/images/sockB1.jpg",
+    "AppFiles/images/sockB2.jpg",
+    "AppFiles/images/sockB3.jpg",
+    "AppFiles/images/sockB4.jpg"
+  ]
+}

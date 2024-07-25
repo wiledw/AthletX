@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athletX.gui.productPage">
+   <root>
+      <AnchorPane fx:id="pane" prefHeight="750.0" prefWidth="1050.0" style="-fx-background-color: text-area-background;">
+          <children>
+            <ImageView fx:id="main" fitHeight="300.0" fitWidth="305.0" layoutX="57.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: #22263E;">
+               <image>
+                  <Image url="@../icons/Golf5.jpg" />
+               </image>
+            </ImageView>
+            <VBox fx:id="border2" layoutX="153.0" layoutY="475.0">
+               <children>
+                  <ImageView fx:id="sub2" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Golf2.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox fx:id="border4" layoutX="289.0" layoutY="475.0">
+               <children>
+                  <ImageView fx:id="sub4" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Golf4.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox fx:id="border3" layoutX="226.0" layoutY="475.0">
+               <children>
+                  <ImageView fx:id="sub3" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Golf3.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox fx:id="border1" layoutX="77.0" layoutY="475.0">
+               <children>
+                  <ImageView fx:id="sub1" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Golf1.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Line endX="500.0" layoutX="512.0" layoutY="207.0" startX="-100.0" stroke="#adb2d2" strokeMiterLimit="50.0" strokeWidth="2.0" style="-fx-fill: #dcdeec;" />
+            <Button fx:id="addToCartBtn" layoutX="650.0" layoutY="615.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="41.0" prefWidth="250.0" style="-fx-background-color: #22263E;" text="Add to Cart" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="purchaseNowBtn" layoutX="140.0" layoutY="615.0" mnemonicParsing="false" onAction="#purchaseNow" prefHeight="41.0" prefWidth="250.0" style="-fx-background-color: #22263E;" text="Purchase Now" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="delProd" layoutX="791.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#onDelClicked" prefHeight="41.0" prefWidth="213.0" style="-fx-background-color: #da3c3c;" text="Delete Product" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Regular" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="prodTitle" layoutX="412.0" layoutY="169.0" prefHeight="34.0" prefWidth="289.0" text="Label">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceTag1" layoutX="413.0" layoutY="371.0" prefHeight="17.0" prefWidth="97.0" />
+            <HBox layoutX="412.0" layoutY="229.0" minHeight="320.0">
+               <children>
+                  <VBox prefHeight="280.0" prefWidth="300.0">
+                     <children>
+                        <HBox minHeight="100.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #22263E;">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #22263E;" text="Price" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="priceLabel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" text="Label">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Label>
+                                 </children>
+                              </Pane>
+                           </children></HBox>
+                        <Pane prefHeight="50.0" prefWidth="50.0" />
+                        <HBox minHeight="100.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #22263E;">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #22263E;" text="Size" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="sizeLabel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" text="Label">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Label>
+                                 </children>
+                              </Pane>
+                           </children></HBox>
+                        <Pane layoutX="10.0" layoutY="110.0" prefHeight="50.0" prefWidth="50.0" />
+                        <HBox layoutX="10.0" layoutY="10.0" minHeight="100.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #22263E;">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #22263E;" text="Colour" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="colourLabel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" text="Label">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="110.0" prefHeight="50.0" prefWidth="50.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="280.0" prefWidth="300.0">
+                     <children>
+                        <HBox minHeight="100.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #22263E;">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #22263E;" text="Gender" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="genderLabel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" text="Label">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="50.0" prefWidth="50.0" />
+                        <HBox minHeight="100.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #22263E;">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #22263E;" text="Stock" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="stockLabel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" text="Label">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="110.0" prefHeight="50.0" prefWidth="50.0" />
+                        <HBox layoutX="10.0" layoutY="10.0" minHeight="100.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #22263E;">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #22263E;" text="Type" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="typeLabel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" text="Label">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="110.0" prefHeight="50.0" prefWidth="50.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label fx:id="errorMsg" alignment="CENTER" layoutX="399.0" layoutY="696.0" prefHeight="40.0" prefWidth="253.0" textFill="RED">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+          </children>
+      </AnchorPane>
+   </root>
+</Scene>

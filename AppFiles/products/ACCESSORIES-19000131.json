@@ -1,0 +1,14 @@
+{
+  "type": "OTHER",
+  "name": "2LB Dumbbell",
+  "prodId": 19000131,
+  "stock": 100,
+  "price": 19.69,
+  "category": "ACCESSORIES",
+  "supImageDir": [
+    "AppFiles/images/weightsP1.jpg",
+    "AppFiles/images/weightsP2.jpg",
+    "AppFiles/images/weightsP3.jpg",
+    "AppFiles/images/weightsP4.jpg"
+  ]
+}

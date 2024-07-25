@@ -1,0 +1,75 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'edu.sc.seis.launch4j' version '2.5.4'
+    id 'org.beryx.jlink' version '2.26.0'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+
+javafx {
+    version = "17"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+group 'athletX'
+version '1.0-SNAPSHOT'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.1.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
+    implementation 'org.openjfx:javafx-controls:17'
+}
+
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass = 'athletX.Main'
+    mainModule = 'athletX.Main'
+}
+
+mainClassName = 'athletX.Main'
+jar {
+    duplicatesStrategy = 'exclude'
+
+    manifest {
+        attributes 'Main-Class': 'athletX.Main'
+    }
+}
+
+
+tasks.register("copyIcon", Copy) {
+    from layout.projectDirectory.file("icons/test.ico")
+    into layout.buildDirectory.dir("output/AppFiles")
+}
+
+tasks.register("copyProductFiles", Copy) {
+    from layout.projectDirectory.dir("AppFiles")
+    into layout.buildDirectory.dir("output/AppFiles")
+}
+
+
+jlink {
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    imageDir = file("${buildDir}/output/AppFiles/jre")
+}
+
+createExe {
+
+    libraryDir = 'AppFiles/lib'
+    outputDir = 'output'
+    bundledJreAsFallback=false
+    bundledJre64Bit = true
+    bundledJrePath = 'AppFiles/jre'
+    icon = 'AppFiles/test.ico'
+
+}
